@@ -1,0 +1,31 @@
+switchbot_api/commands.py
+  s_8eb67cfb690df0::t_02e55d9ef71f53 278
+  s_a268ce7d0b7e22::t_58febcce871edc 260-277,279-286
+switchbot_api/__init__.py
+  s_a268ce7d0b7e22::t_bd831330fb0c36 42
+  s_a268ce7d0b7e22::t_5dd8a68cac11f9 101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "51211444fbb67fe5ddc2d42d3a5707d1164d802d",
+  "prompts": {},
+  "sessions": {
+    "s_8eb67cfb690df0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98bf04bf-4447-4909-b7fd-f94c50161dcc",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    },
+    "s_a268ce7d0b7e22": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fffb7f12-c057-4cae-8bbf-f2b365caf2a5",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "testdev <testdev@onero.com>"
+    }
+  }
+}
