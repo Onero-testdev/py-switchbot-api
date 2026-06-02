@@ -1,0 +1,9 @@
+switchbot_api/commands.py
+  s_8eb67cfb690df0::t_8583ff039a8370 377-381
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "6cfa6dd6be0708296fdade1137e9cb8ca84ed1b8",
+  "prompts": {}
+}
