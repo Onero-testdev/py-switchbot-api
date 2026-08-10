@@ -60,7 +60,7 @@ class OthersCommands(Commands):
 
 
 class CurtainCommands(Commands):
-    """Curtain & Curtain3 commands."""
+    """Curtain & Curtain3  & Curtain4 commands."""
 
     SET_POSITION = "setPosition"  # parameter(str): index0,mode0,position0  e.g. 0,ff,80
     PAUSE = "pause"
@@ -68,7 +68,7 @@ class CurtainCommands(Commands):
     @classmethod
     def get_supported_devices(cls) -> list[str]:
         """Get supported devices."""
-        return ["Curtain", "Curtain 3"]
+        return ["Curtain", "Curtain 3", "Curtain 4"]
 
 
 class LockCommands(Commands):
@@ -240,6 +240,8 @@ class RGBWWLightCommands(Commands):
             "Color Bulb",
             "RGBICWW Floor Lamp",
             "RGBICWW Strip Light",
+            "Permanent Outdoor Lights",
+            "RGBICWW Light Bars",
         ]
 
 
@@ -294,7 +296,7 @@ class ArtFrameCommands(Commands):
     @classmethod
     def get_supported_devices(cls) -> list[str]:
         """Get supported devices."""
-        return ["AI Art Frame"]
+        return ["AI Art Frame", "AI Art Frame Luma"]
 
 
 class DoorBellCommands(Commands):
@@ -401,7 +403,11 @@ class BatteryCirculatorFanCommands(Commands):
     @classmethod
     def get_supported_devices(cls) -> list[str]:
         """Get supported devices."""
-        return ["Circulator Fan", "Battery Circulator Fan"]
+        return [
+            "Circulator Fan",
+            "Battery Circulator Fan",
+            "Battery Circulator Fan 2 Pro",
+        ]
 
 
 class TVCommands(Commands):
@@ -473,6 +479,22 @@ class KeyPadCommands(Commands):
     def get_supported_devices(cls) -> list[str]:
         """Get supported devices."""
         return ["Keypad", "Keypad Touch", "Keypad Vision", "Keypad Vision Pro"]
+
+
+class KataFriendsCommands(Commands):
+    """Kata Friends commands."""
+
+    MODE = "mode"
+    BACK_HOME = "backHome"
+    SNAPSHOTS = "snapshots"
+    CHILD_LOCK = "childLock"
+    PICTURE_TAKING = "pictureTaking"
+    TALK = "talk"
+
+    @classmethod
+    def get_supported_devices(cls) -> list[str]:
+        """Get supported devices."""
+        return ["Kata Friends"]
 
 
 T = TypeVar("T", bound=CommonCommands)
